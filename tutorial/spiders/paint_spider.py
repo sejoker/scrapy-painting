@@ -8,8 +8,7 @@ from scrapy.http import Request
 class PaintSpider(Spider):
     name = "paint"
     allowed_domains = ["art-on-line.com.ua"]
-    start_urls = ["http://art-on-line.com.ua/ru/2-pejzazh"]
-    #rules = [Rule(SgmlLinkExtractor(allow=['ru/.*/.*\.html']), callback='parse')]
+    start_urls = ["http://art-on-line.com.ua/ru/8-zhanrovaya-zhivopis"]
 
     def complete_url(string):
         """Return complete url"""
